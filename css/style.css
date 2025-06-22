@@ -97,16 +97,12 @@ nav {
   background-image: url("../assets/bh-evening.jpg");
 }
 
-.skills-page .page-header {
-  background-image: url("../assets/cedar-breaks.jpg");
-}
-
 .projects-page .page-header {
   background-image: url("../assets/pacific-cliffs.jpg");
 }
 
 .contact-page .page-header {
-  background-image: url("../assets/c-sunset.jpg");
+  background-image: url("../assets/cedar-breaks.jpg");
 }
 
 /* === MAIN === */
