@@ -1,3 +1,11 @@
+/* === GLOBAL RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === TYPOGRAPHY === */
 body {
     background-color: #1e1e1e;
     color: #ffffff;
@@ -6,12 +14,7 @@ body {
     padding: 0;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* === NAVIGATION === */
 nav {
     background-color: #2e2e2e;
     padding: 1em 0;
@@ -43,6 +46,7 @@ nav {
     color: #FF6961;
 }
 
+/* === PAGE HEADER === */
 .page-header {
   height: 300px;
   color: #ffffff;
@@ -70,6 +74,8 @@ nav {
   gap: 1rem;
   font-size: 1.25rem;
   font-weight: normal;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  padding: 8px;
 }
 
 .page-header .subtitle span {
@@ -100,6 +106,66 @@ nav {
   background-image: url("../assets/c-sunset.jpg");
 }
 
+/* === MAIN === */
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+/* === CONTACT SECTION === */
+.contact {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  color: #ddd;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.contact-list li {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: background-color 0.2s;
+}
+
+.contact-list li:hover {
+  background-color: #2a2a2a;
+}
+
+.contact-list a {
+  color: #FF6961;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.contact-list i {
+  font-size: 1.4rem;
+}
+
+/* === FOOTER === */
 footer {
     text-align: center;
     padding: 10px;
@@ -108,9 +174,4 @@ footer {
     width: 100%;
     font-size: 12px;
     color: #808080;
-}
-
-main {
-    padding: 2em;
-    text-align: center;
 }
