@@ -14,7 +14,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh
+    min-height: 100vh;
 }
 
 /* === NAVIGATION === */
@@ -112,6 +112,172 @@ main {
     flex: 1;
 }
 
+/* === RESUME PAGE === */
+.resume-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #2a2a2a;
+  overflow: hidden;
+}
+
+.resume-sidebar {
+  flex: 0 0 280px;
+  padding: 1.5rem;
+  background: #1e1e1e;
+  border-right: 1px solid #444;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-photo {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.resume-statement {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+  background-color: #2a2a2a;
+  padding: 8px;
+}
+
+.btn.contact-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #FF6961;
+  color: #1e1e1e;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+}
+
+.btn.contact-btn:hover {
+  background-color: #ffffff;
+}
+
+.resume-main {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.resume-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #444;
+  text-align: left;
+}
+
+.resume-section:last-child {
+  border-bottom: none;
+}
+
+.resume-section h2 {
+  color: #FF6961;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.job-title-row {
+  display: flex;
+  gap: 5px;
+}
+
+.resume-section .job-title-row h3,
+.resume-section .job-title-row h4 {
+  font-size: 1.1rem;
+}
+
+.resume-section .job-title-row h3 {
+  color: #ddd;
+}
+
+.resume-section .job-title-row h4 {
+  color: #808080;
+}
+
+.resume-section p,
+.resume-section ul {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.resume-section li {
+  margin-top: 10px;
+  margin-left: 40px;
+  max-width: 500px;
+}
+
+.skills-table {
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.skills-table th,
+.skills-table td {
+  border: 1px solid #444;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.skills-table th {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.skills-table tbody tr {
+  background-color: #1e1e1e;
+}
+
+.skills-table code {
+  color: #FF6961;
+  font-size: 0.95rem;
+}
+
+/* === RESUME DOWNLOADS === */
+.resume-downloads h2 {
+  font-size: 1.4rem;
+  color: #FF6961;
+  margin-bottom: 1rem;
+}
+
+.resume-btn {
+  display: inline-block;
+  margin: 0.3rem 1rem 0.3rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #FF6961;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.resume-btn:hover {
+  background-color: #FF6961;
+  color: #1e1e1e;
+}
+
 /* === CONTACT SECTION === */
 .contact {
   max-width: 700px;
@@ -182,7 +348,7 @@ main {
   color: #fff;
 }
 
-.contact-table tr:nth-child(even) {
+.contact-table tbody tr {
   background-color: #1e1e1e;
 }
 
@@ -190,7 +356,6 @@ main {
   color: #FF6961;
   font-size: 0.95rem;
 }
-
 
 /* === FOOTER === */
 footer {

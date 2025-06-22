@@ -13,6 +13,5 @@ navLinks.forEach(link => {
   }
 });
 
-
 // Update Copyright Year
 document.getElementById('year').textContent = new Date().getFullYear();
