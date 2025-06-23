@@ -1,0 +1,2 @@
+# Exclude the documents folder from language statistics
+documents/** linguist-generated
