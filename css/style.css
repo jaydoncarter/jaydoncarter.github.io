@@ -317,6 +317,122 @@ a:hover {
   text-decoration: none;
 }
 
+/* == PROJECTS SECTION == */
+.projects-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projects-container .description p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: var(--text-white);
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: var(--bg-medium);
+  border: 1px solid var(--border);
+}
+
+.projects-container h1 {
+  color: var(--accent);
+  font-size: 3rem;
+}
+
+.project-box {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  background-color: var(--bg-medium);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.project-text {
+  flex: 1 1 60%;
+  padding: 1.5rem;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-top {
+  background-color: var(--bg-dark);
+  padding: 1rem;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.project-text h2 {
+  color: var(--accent);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-text .skills {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.project-text .skills p {
+  color: var(--bg-dark);
+  background-color: var(--bg-medium);
+  font-weight: bold;
+  padding: 0.25rem;
+}
+
+.project-text .description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: var(--text-light);
+  padding: 1.5rem;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--accent);
+  color: var(--text-white);
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.project-btn:hover {
+  background-color: var(--accent);
+  color: var(--bg-dark);
+  text-decoration: none;
+}
+
+.project-image {
+  flex: 1 1 40%;
+  min-width: 250px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* === CONTACT SECTION === */
 .contact {
   max-width: 700px;
