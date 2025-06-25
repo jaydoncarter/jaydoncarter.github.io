@@ -1,5 +1,6 @@
-/* === COLOR VARIABLES === */
+/* === VARIABLES === */
 :root {
+  /* Colors */
   --bg-dark: #1e1e1e;
   --bg-medium: #2a2a2a;
   --bg-medium-hover: #5f5f5f;
@@ -8,6 +9,17 @@
   --text-medium: #808080;
   --accent : #FF6961;
   --border: #444;
+
+  /* Font Sizes */
+  --text-sm: 0.75rem;
+  --text-md: 0.95rem;
+  --text-base: 1rem;
+  --text-lg: 1.1rem;
+  --text-xl: 1.4rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 3rem;
+  --text-header: 5rem;
+  --text-subheader: 1.25rem;
 }
 
 /* === GLOBAL RESET === */
@@ -78,7 +90,7 @@ nav {
 }
 
 .page-header h1 {
-  font-size: 5rem;
+  font-size: var(--text-header);
   font-weight: bold;
   margin-bottom: 0.5rem;
   letter-spacing: 2px;
@@ -87,13 +99,10 @@ nav {
 .page-header .subtitle {
   display: flex;
   gap: 1rem;
-  font-size: 1.25rem;
+  font-size: var(--text-subheader);
   font-weight: normal;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 8px;
-}
-
-.page-header .subtitle span {
   white-space: nowrap;
 }
 
@@ -157,13 +166,13 @@ main {
 
 .resume-box h4 {
   color: var(--accent);
-  font-size: 1.1rem;
+  font-size: var(--text-lg);
 }
 
 .resume-statement,
 .resume-box li {
   color: var(--text-light);
-  font-size: 0.95rem;
+  font-size: var(--text-md);
   line-height: 1.4;
 }
 
@@ -207,7 +216,7 @@ main {
 
 .resume-section h2 {
   color: var(--accent);
-  font-size: 1.4rem;
+  font-size: var(--text-xl);
   margin-bottom: 0.5rem;
 }
 
@@ -239,7 +248,7 @@ a:hover {
 
 .resume-section .job-title-row h3,
 .resume-section .job-title-row h4 {
-  font-size: 1.1rem;
+  font-size: var(--text-lg);
 }
 
 .resume-section .job-title-row h3 {
@@ -254,7 +263,7 @@ a:hover {
 .resume-section .school-table,
 .resume-section ul {
   color: var(--text-light);
-  font-size: 0.95rem;
+  font-size: var(--text-md);
 }
 
 .resume-section li {
@@ -268,7 +277,7 @@ a:hover {
   max-width: 500px;
   margin: 2rem auto;
   border-collapse: collapse;
-  font-size: 0.95rem;
+  font-size: var(--text-md);
   color: var(--text-light);
 }
 
@@ -290,12 +299,12 @@ a:hover {
 
 .skills-table code {
   color: var(--accent);
-  font-size: 0.95rem;
+  font-size: var(--text-md);
 }
 
 /* === RESUME DOWNLOADS === */
 .resume-downloads h2 {
-  font-size: 1.4rem;
+  font-size: var(--text-xl);
   color: var(--accent);
   margin-bottom: 1rem;
 }
@@ -330,7 +339,7 @@ a:hover {
 
 .projects-container .description p {
   margin-bottom: 2rem;
-  font-size: 1.1rem;
+  font-size: var(--text-lg);
   color: var(--text-white);
   max-width: 700px;
   margin: 2rem auto;
@@ -341,7 +350,7 @@ a:hover {
 
 .projects-container h1 {
   color: var(--accent);
-  font-size: 3rem;
+  font-size: var(--text-3xl);
 }
 
 .project-box {
@@ -372,7 +381,7 @@ a:hover {
 
 .project-text h2 {
   color: var(--accent);
-  font-size: 1.5rem;
+  font-size: var(--text-2xl);
   margin-bottom: 0.5rem;
 }
 
@@ -389,7 +398,7 @@ a:hover {
 }
 
 .project-text .description {
-  font-size: 1rem;
+  font-size: var(--text-base);
   margin-bottom: 1rem;
   line-height: 1.5;
   color: var(--text-light);
@@ -440,7 +449,7 @@ a:hover {
   max-width: 1000px;
   margin-bottom: 4rem;
   border-collapse: collapse;
-  font-size: 0.95rem;
+  font-size: var(--text-md);
 }
 
 .projects-table th,
@@ -464,7 +473,7 @@ a:hover {
 
 .projects-table h6 {
   color: var(--accent);
-  font-size: 0.95rem;
+  font-size: var(--text-md);
 }
 
 .projects-table .wrap-column {
@@ -483,8 +492,8 @@ a:hover {
 
 .contact p {
   margin-bottom: 2rem;
-  font-size: 1.1rem;
-  color: var(--text-light);
+  font-size: var(--text-lg);
+  color: var(--text-white);
 }
 
 .contact-list {
@@ -508,7 +517,7 @@ a:hover {
 .contact-list a {
   color: var(--accent);
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: var(--text-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -525,7 +534,7 @@ a:hover {
   max-width: 500px;
   margin: 2rem auto;
   border-collapse: collapse;
-  font-size: 0.95rem;
+  font-size: var(--text-md);
 }
 
 .contact-table th,
@@ -547,13 +556,13 @@ a:hover {
 
 .contact-table code {
   color: var(--accent);
-  font-size: 0.95rem;
+  font-size: var(--text-md);
 }
 
 /* === FOOTER === */
 footer {
     text-align: center;
     padding: 10px;
-    font-size: 12px;
+    font-size: var(--text-sm);
     color: var(--text-medium);
 }
