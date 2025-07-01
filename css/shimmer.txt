@@ -1,0 +1,35 @@
+.nav a.contact-nav {
+  background: linear-gradient(
+    45deg, 
+    #ff00cc, #ff99cc, #99ccff, #00ccff, #cc99ff, #ff00cc
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 2s infinite linear;
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.nav a.contact-nav:hover {
+  color: var(--text-white);
+}
+
+.nav a.contact-nav.active:hover {
+  color: var(--accent);
+}
+
+.nav a.contact-nav.active {
+  background: var(--accent);
+  background-clip: text;
+  animation: none;
+  text-decoration: underline;
+}
