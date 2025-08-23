@@ -225,6 +225,105 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+/* === HOME PAGE === */
+.home-content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+/* Latest Project */
+.latest-project {
+  border: 1px solid var(--border);
+  display: flex;
+  background-color: var(--text-light);
+}
+
+.latest-project h1 {
+  color: var(--bg-dark);
+  font-size: var(--text-3xl);
+  writing-mode: sideways-lr;
+  background-color: var(--accent);
+  padding: 1rem;
+  border-right: 1px solid var(--bg-dark);
+}
+
+.latest-project .project-box{
+  margin: 1rem;
+  box-shadow: 0px 0px 8px var(--border);
+}
+
+/* Buttons (home) */
+.home-btn {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  border: 1px solid var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: var(--text-base);
+}
+
+.home-btn:hover {
+  background: var(--accent);
+  text-decoration: none;
+  color: var(--bg-dark);
+}
+
+/* Grid of cards */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-medium);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+/* Card image */
+.card-image {
+  width: 100%;
+  height: 170px;
+  background: #111;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Card content */
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card-content h3 {
+  font-size: var(--text-xl);
+  color: var(--accent);
+  margin: 0;
+}
+
+.card-content p {
+  font-size: var(--text-md);
+  color: var(--text-light);
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
 /* === RESUME PAGE === */
 .resume-content {
   display: flex;
@@ -618,46 +717,6 @@ hr {
 .container .content a {
   text-decoration: underline;
 }
-
-/* @media (max-width: 767.98px) {
-  .timeline::after {
-    left: 90px;
-  }
-
-  .container {
-    width: 100%;
-    padding-left: 120px;
-    padding-right: 30px;
-  }
-
-  .container.right {
-    left: 0%;
-  }
-
-  .container.left::after, 
-  .container.right::after {
-    left: 82px;
-  }
-
-  .container.left::before,
-  .container.right::before {
-    left: 100px;
-    border-color: transparent var(--accent) transparent transparent;
-  }
-
-  .container.left .date,
-  .container.right .date {
-    right: auto;
-    left: 15px;
-  }
-
-  .container.left .content,
-  .container.right .content {
-    padding: 30px 30px 30px 90px;
-    border-radius: 500px 0 0 500px;
-  }
-} */
-
 
 /* Section 3: Activities */
 .about-activities {
