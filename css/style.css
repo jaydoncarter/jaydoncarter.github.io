@@ -56,15 +56,15 @@ body {
 
 /* === NAVIGATION === */
 nav {
-    background-color: var(--bg-medium);
-    padding: 1em 0;
-    text-align: center;
+  background-color: var(--bg-medium);
+  padding: 1em 0;
+  text-align: center;
 }
 
 .nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 460px) {
@@ -234,6 +234,66 @@ input:checked + .slider:before {
   flex-direction: column;
   gap: 2rem;
 }
+
+.home-content .welcome-text {
+  line-height: 1.5;
+  padding: 1.5rem;
+  padding-bottom: 0;
+}
+
+.home-content .welcome-text h1 {
+  font-size: var(--text-header);
+  background: linear-gradient(
+    45deg, 
+    #ff00cc, #ff99cc, #99ccff, #00ccff, #cc99ff, #ff00cc
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 2s infinite linear;
+  background-size: 200% 100%;
+  -webkit-text-stroke: 1px black
+}
+
+.home-content .welcome-text p {
+  font-size: var(--text-lg);
+  color: var(--text-white);
+  max-width: 700px;
+  margin: 2rem auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.home-content .welcome-image {
+  color: var(--bg-dark);
+  font-size: var(--text-sm);
+  padding: 0;
+}
+
+.home-content .welcome-image img {
+  width: 700px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-content .welcome-image .image-title {
+  background-color: var(--text-light);
+  width: 100%;
+  max-width: 700px;
+  justify-self: center;
+  padding: 0.25rem;
+}
+
 /* Latest Project */
 .latest-project {
   border: 1px solid var(--border);
@@ -255,7 +315,12 @@ input:checked + .slider:before {
   box-shadow: 0px 0px 8px var(--border);
 }
 
-/* Buttons (home) */
+/* Buttons */
+.home-content h2 {
+  color: var(--accent);
+  font-size: var(--text-3xl);
+}
+
 .home-btn {
   display: inline-block;
   padding: 0.5rem 0.9rem;
@@ -288,7 +353,7 @@ input:checked + .slider:before {
   overflow: hidden;
 }
 
-/* Card image */
+/* Card Image */
 .card-image {
   width: 100%;
   height: 170px;

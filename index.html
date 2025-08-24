@@ -1,4 +1,5 @@
 <!--index.html-->
+<!-- TODO: Fix images-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -50,9 +51,17 @@
         </header>
 
         <main class="home-content">
+            <div class="welcome-text">
+                <h1>Hello!</h1>
+                <p>Welcome to my website! Here you can see my resume, about me info, past and present software projects, and get in contact. Thanks for stopping by! :)</p>
+            </div>
+            <div class="welcome-image">
+                <img id="randomImage" src="assets/meadow.jpg" alt="Random nature image">
+                <div class="image-title" id="imageTitle">Title of the image</div>
+            </div>
             <hr>
             <!-- Latest Project -->
-             <div class="latest-project">
+            <div class="latest-project">
                 <h1>Latest Project</h1>
                 <section class="project-box">
                     <div class="project-text">
@@ -78,7 +87,8 @@
                 </section>
             </div>
             <hr>
-            <!-- 2x2 Navigation Grid -->
+            <!-- Navigation Grid -->
+            <h2>Sections</h2>
             <section class="home-grid" aria-label="Quick links">
                 <article class="home-card">
                 <div class="card-image">
@@ -87,7 +97,7 @@
                 <div class="card-content">
                     <h3>Resume</h3>
                     <p>View my resume with education, experience, and downloadable PDF, DOCX, and HTML versions.</p>
-                    <a class="home-btn" href="resume.html" aria-label="Open resume">Open Resume</a>
+                    <a class="home-btn" href="resume.html" aria-label="Open resume">Resume</a>
                 </div>
                 </article>
 
@@ -109,7 +119,7 @@
                 <div class="card-content">
                     <h3>Projects</h3>
                     <p>Browse my portfolio: code examples, GitHub links and projects in progress.</p>
-                    <a class="home-btn" href="projects.html" aria-label="Open projects page">See Projects</a>
+                    <a class="home-btn" href="projects.html" aria-label="Open projects page">Projects</a>
                 </div>
                 </article>
 
