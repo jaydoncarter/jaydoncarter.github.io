@@ -39,8 +39,8 @@ checkbox.addEventListener('change', () => {
 // Image Slideshow
 const images = [
       {src: "assets/meadow.jpg", title: "Apline meadow on the Forsyth backpacking trail in Pine Valley wilderness area." },
-      {src: "assets/desert-morning.jpg", title: "A beautiful sunrise on Church Rocks MTB trail near St. George UT." },
-      {src: "assets/hills.jpg", title: "Facing south-east from the top of the Breaks trail near Cedar City UT." },
+      {src: "assets/desert-morning.jpg", title: "A beautiful sunrise on Church Rocks MTB trail near St. George." },
+      {src: "assets/hills.jpg", title: "Facing south-east from the top of the Breaks trail near Cedar City." },
       {src: "assets/snow-forest.jpg", title: "Taken while nordic skiing in Deer Hollow in Dixie National Forest." }
     ];
 

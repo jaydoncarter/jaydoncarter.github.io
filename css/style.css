@@ -67,6 +67,7 @@ nav {
   margin: 0;
 }
 
+/* Navigation Mobile Adjustments */
 @media (max-width: 460px) {
   .nav {
     padding-left: 4rem;
@@ -125,13 +126,16 @@ nav {
   padding: 8px;
   white-space: nowrap;
   font-size: var(--text-subheader);
+  margin-bottom: 1rem;
 }
 
-@media (max-width: 600px) {
+/* Homepage Subtitles Mobile Adjustments */
+@media (max-width: 750px) {
   .page-header .subtitle {
     flex-direction: column;
     white-space: normal;
     gap: 0.5rem;
+    margin-bottom: 1rem;
   }
   .page-header .subtitle span:nth-child(2),
   .page-header .subtitle span:nth-child(4) {
@@ -287,11 +291,12 @@ input:checked + .slider:before {
 }
 
 .home-content .welcome-image .image-title {
-  background-color: var(--text-light);
+  color: var(--text-light);
   width: 100%;
   max-width: 700px;
   justify-self: center;
   padding: 0.25rem;
+  border: none;
 }
 
 /* Latest Project */
@@ -313,9 +318,9 @@ input:checked + .slider:before {
 .latest-project .project-box{
   margin: 1rem;
   box-shadow: 0px 0px 8px var(--border);
+  height: 350px;
 }
 
-/* Buttons */
 .home-content h2 {
   color: var(--accent);
   font-size: var(--text-3xl);
@@ -338,7 +343,6 @@ input:checked + .slider:before {
   color: var(--bg-dark);
 }
 
-/* Grid of cards */
 .home-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -806,10 +810,6 @@ hr {
   overflow: hidden;
 }
 
-.activity.reverse {
-  flex-direction: row-reverse;
-}
-
 .activity-image,
 .activity-text {
   flex: 1;
@@ -837,25 +837,6 @@ hr {
   font-size: var(--text-md);
   color: var(--text-light);
   line-height: var(--line-height-normal);
-}
-
-@media (max-width: 768px) {
-  .who-container,
-  .activity,
-  .activity.reverse {
-    flex-direction: column;
-    text-align: center;
-  }
-  .timeline {
-    padding-left: 1rem;
-    border-left-width: 1px;
-  }
-  .timeline li {
-    padding-left: 1rem;
-  }
-  .timeline li::before {
-    left: -7px;
-  }
 }
 
 /* == PROJECTS SECTION == */
@@ -891,7 +872,7 @@ hr {
   background-color: var(--bg-medium);
   overflow: hidden;
   border: 1px solid var(--border);
-  transition: box-shadow 0.2s;
+  height: 350px;
 }
 
 .project-text {
@@ -1039,6 +1020,7 @@ hr {
   background-color: var(--bg-dark);
   padding: 1rem;
   transition: background-color 0.2s;
+  border: 1px solid var(--accent);
 }
 
 .contact-list li:hover {
@@ -1059,7 +1041,6 @@ hr {
   color: var(--bg-dark);
 }
 
-/* === CONTACT TABLE === */
 .contact-table {
   width: 100%;
   max-width: 500px;
@@ -1090,10 +1071,327 @@ hr {
   font-size: var(--text-md);
 }
 
+/* Hide Contact Table on Mobile */
+@media (max-width: 500px) {
+  .contact-table, #table-description {
+    display: none;
+  }
+}
+
 /* === FOOTER === */
 footer {
     text-align: center;
     padding: 10px;
     font-size: var(--text-sm);
     color: var(--text-medium);
+}
+
+
+/* == Index Mobile Responsiveness == */
+/* Make welcome image fluid and its caption full width */
+.home-content .welcome-image img {
+  width: 100%;
+  max-width: 700px;
+}
+
+.home-content .welcome-image .image-title {
+  width: 100%;
+  max-width: 700px;
+  padding: 0.35rem 0.6rem 0rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Stack hero and make project boxes natural height on tablets/phones */
+@media (max-width: 680px) {
+  /* Latest project: stack vertically */
+  .latest-project {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .latest-project h1 {
+    writing-mode: horizontal-tb;
+    padding: 0.75rem;
+    text-align: center;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    font-size: var(--text-2xl);
+  }
+
+  /* project box becomes normal card */
+  .latest-project .project-box {
+    margin: 0.8rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .project-text, .project-image {
+    flex: none;
+    width: 100%;
+  }
+
+  .project-image {
+    min-height: 180px;
+  }
+
+  .project-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Buttons become full width for easier tapping */
+  .project-buttons, .hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .home-btn, .project-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Keep hero content centered on small screens */
+  .hero-content {
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+/* Mobile phone layout: single-column, nav wraps */
+@media (max-width: 460px) {
+  /* Grid cards collapse to one column */
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-image { height: 180px; }
+  
+  .home-content .welcome-image .image-title { height: 2rem; }
+
+  /* Theme toggle z-index and spacing */
+  .theme-box {
+    bottom: 18px;
+    right: 6px;
+    padding: 8px;
+  }
+
+  /* Footer spacing */
+  footer {
+    padding: 14px 8px;
+    font-size: var(--text-sm);
+  }
+}
+
+/* == Projects Mobile Responsiveness == */
+/* Remove any forced fixed height so project cards size naturally */
+.project-box {
+  /* If you previously set height: 350px; remove/override it */
+  height: auto !important;
+  flex-wrap: wrap;
+}
+
+/* Ensure images scale and the image container doesn't force overflow */
+.project-image {
+  flex: 1 1 40%;
+  min-width: 220px;
+  max-width: 480px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Make project-text and buttons flexible */
+.project-text {
+  flex: 1 1 60%;
+  min-width: 260px;
+  padding: 1.25rem;
+  box-sizing: border-box;
+}
+
+/* Phone: compact spacing, smaller fonts, responsive table */
+@media (max-width: 480px) {
+  .projects-container {
+    max-width: 95%;
+    margin: 1.25rem auto;
+    gap: 1rem;
+  }
+
+  .project-top h2 {
+    font-size: var(--text-xl);
+  }
+
+  .project-text .description {
+    font-size: var(--text-md);
+    padding: 0.9rem;
+  }
+
+  .project-image {
+    min-height: 140px;
+  }
+
+
+
+  /* Add more space between project boxes */
+  #previous-box { margin-bottom: 0.5rem; }
+}
+
+/* Fixes table size for mobile */
+@media (max-width: 600px) {
+  .projects-table, .projects-table thead, .projects-table tbody, .projects-table th, .projects-table td, .projects-table tr {
+			display: block;
+		}
+
+		.projects-table thead tr {
+			display: none;
+		}
+
+    .projects-table tr {
+      margin: 0 0 1rem 0;
+    }
+
+		.projects-table td:before {
+			position:relative;
+			top: 0;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+
+		.projects-table td:nth-of-type(3)::before { content: "Development Begins:"; }
+}
+
+/* == Resume Mobile Responsiveness == */
+@media (max-width: 600px) {
+  .resume-content {
+    justify-content: center;
+  }
+
+  .resume-sidebar .contact-btn {
+    margin-top: 1rem;
+  }
+}
+
+/* == About Mobile Responsiveness == */
+@media (max-width: 770px) {
+  .who-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* move the timeline center line to the left as a vertical guideline */
+  .timeline::after {
+    left: 28px;
+  }
+  .timeline {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left-width: 1px;
+  }
+
+  .container,
+  .container.left,
+  .container.right {
+    width: 100%;
+    left: 0;
+    padding: 10px 16px 10px 56px; /* leave space for the date/marker at the left */
+    box-sizing: border-box;
+    margin-bottom: 1.25rem;
+  }
+
+  /* reposition the circular marker to the left edge of each item */
+  .container::after {
+    left: 4px;
+    right: auto;
+    top: 20px;
+  }
+  .container.right::after {
+    left: 4px;
+    right: auto;
+  }
+
+  /* reposition connecting horizontal bars */
+  .container::before {
+    left: 12px;
+    top: 27px;
+    width: 44px;
+  }
+  .container.right::before {
+    width: 47px;
+  }
+
+  /* place the date left of the line */
+  .container .date, .container.right .date {
+    position: absolute;
+    left: -43px;
+    top: 20px;
+    transform: none;
+    text-align: left;
+    width: 40px;
+  }
+
+  /* content becomes full width card */
+  .container .content {
+    padding: 14px;
+    border: 1px solid var(--border);
+    background: var(--bg-dark);
+  }
+
+  .container.left .content,
+  .container.right .content {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .activity {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .activity.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .activity-image,
+  .activity-text {
+    width: 100%;
+  }
+
+  .activity-image img {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
+  }
+
+  .activity-text {
+    padding: 1rem;
+  }
+
+  .activity-text h3 { font-size: var(--text-xl); }
+  .activity-text p { font-size: var(--text-md); line-height: 1.45; }
+}
+
+/* Navigation Mobile Adjustments */
+@media (max-width: 768px) {
+  
 }
