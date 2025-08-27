@@ -55,17 +55,41 @@ xdg-open index.html
 ├── about.html
 ├── projects.html
 ├── contact.html
-├── style.css
+├── README.md
+├── .gitattributes
 ├── assets/
-│   ├── tahoe-bushes.jpg
-│   ├── bh-evening.jpg
+|   ├── bh-evening.jpg
+│   ├── bh-fog.jpg
 │   ├── bike-profile.jpg
+│   ├── blowhard.jpg
+│   ├── c-sunset.jpg
 │   ├── cedar-breaks.jpg
+│   ├── code-pic.png
+│   ├── coding-laptop.jpg
+│   ├── desert-canyon.jpg
+│   ├── desert-morning.jpg
+│   ├── email-pic.png
+│   ├── hills.jpg
+│   ├── meadow.jpg
+│   ├── mtb-ctrail.jpg
 │   ├── pacific-cliffs.jpg
-│   └── pine-valley.jpg
+│   ├── pine-valley.jpg
+│   ├── placeholder.jpg
+│   ├── potomac.jpg
+│   ├── python-password-gen.png
+│   ├── resume-pic.png
+│   ├── rock-climbing.jpg
+│   ├── rocky-meadow.jpg
+│   ├── ski-jump.jpg
+│   ├── snow-forest.jpg
+│   ├── stinson-dusk.jpg
+│   ├── tahoe-bushes.jpg
+│   ├── website-code.png
+│   └── website-screenshot.jpg
 │
 ├── css/
-│   └── style.css
+│   ├── style.css
+│   └── shimmer.txt
 │
 ├── js/
 │   └── main.js
@@ -80,9 +104,12 @@ xdg-open index.html
 │   └── favicon-96x96.png
 │
 └── documents/
-    ├── Jaydon_Carter_Resume.html
-    ├── Jaydon_Carter_Resume.pdf
-    └── Jaydon_Carter_Resume.docx
+│   ├── Jaydon_Carter_Resume.html
+│   ├── Jaydon_Carter_Resume.pdf
+|   └── Jaydon_Carter_Resume.docx
+|
+└── projects/
+    └── random-password-generator-main.zip
 ```
 
 ---
