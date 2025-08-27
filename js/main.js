@@ -1,3 +1,4 @@
+// TODO: Finish implementing slideshow for index
 // Interactive Navigation
 const currentPath = window.location.pathname;
 

@@ -1390,8 +1390,3 @@ footer {
   .activity-text h3 { font-size: var(--text-xl); }
   .activity-text p { font-size: var(--text-md); line-height: 1.45; }
 }
-
-/* Navigation Mobile Adjustments */
-@media (max-width: 768px) {
-  
-}
