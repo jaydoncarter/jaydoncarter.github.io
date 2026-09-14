@@ -1,0 +1,36 @@
+.latest-project {
+  padding-top: 4rem;
+}
+
+.section-heading {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.section-heading__label {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+}
+
+.section-heading h2 {
+  margin: 0.35rem 0 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+  color: var(--primary);
+}
+
+
+@media (max-width: 600px) {
+  .latest-project {
+    padding-top: 4rem;
+
+  }
+
+  .latest-project__card {
+    margin-top: 2rem;
+  }
+}

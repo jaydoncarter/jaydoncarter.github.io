@@ -1,0 +1,13 @@
+.typewriter__cursor {
+  margin-left: 0.08em;
+
+  color: var(--accent);
+
+  animation: cursor-blink 0.9s steps(1) infinite;
+}
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
