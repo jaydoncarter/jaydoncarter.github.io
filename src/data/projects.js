@@ -29,8 +29,7 @@ export const projects = [
       "An independently developed responsive static website featuring extensive HTML and CSS formatting, hosted to GitHub Pages. Key pages include a resume, about, projects, and contact information.",
     technologies: ["HTML", "CSS", "JavaScript", "Git", "VSCode", "GitHub Pages"],
     image: "/images/projects/website-code.png",
-    github: "https://github.com/jaydoncarter/jaydoncarter.github.io",
-    demo: "https://jaydoncarter.github.io",
+    github: "https://github.com/jaydoncarter/jaydoncarter.github.io/tree/old-site",
     status: "completed",
   },
   {
