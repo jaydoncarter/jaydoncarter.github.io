@@ -136,8 +136,8 @@ export const resumeDownloads = [
     path: "/documents/Jaydon_Carter_Resume.docx",
   },
   {
-    label: "HTML",
-    filename: "Jaydon_Carter_Resume.html",
-    path: "/documents/Jaydon_Carter_Resume.html",
+    label: "TXT",
+    filename: "Jaydon_Carter_Resume.txt",
+    path: "/documents/Jaydon_Carter_Resume.txt",
   },
 ];

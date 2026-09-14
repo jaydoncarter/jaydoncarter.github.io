@@ -1,0 +1,49 @@
+﻿Jaydon Carter
+CONTACT
+________________
+
+
+Email: jaydoncarter898@gmail.com        Phone: (415) 599-6492
+LinkedIn: linkedin.com/in/jaydonmcarter/        GitHub: github.com/jaydoncarter
+Portfolio Website: jaydoncarter.github.io        Location: Salt Lake City, UT
+EDUCATION
+________________
+
+
+University of Utah        January 2026 – Present
+BS in Computer Science, Minor in Mathematics        GPA: 4.00/4.00
+* Relevant Coursework: Data Structures and Algorithms, Software Engineering I, Calculus II, Abstract Linear Algebra, Discrete Mathematics, Engineering Probability and Statistics
+* Honors: Honors College, Price College of Engineering Scholarship, Dean’s List
+* Expected Graduation: Fall 2028
+Southern Utah University        January 2025 – December 2025
+Undergraduate Studies in Computer Science        GPA: 4.00/4.00
+* Relevant Coursework: Object-Oriented Programming, Calculus I, Technology and Ethics
+WORK EXPERIENCE
+________________
+
+
+University of Utah         August 2026 - Present
+Computer Science Teaching Assistant
+* Led weekly lab sessions and office hours for 150+ computer science students, teaching core software engineering concepts and tools, including PyCharm and Linux.
+* Graded weekly programming assignments and exams in Python, delivering constructive feedback to improve code quality.
+* Leveraged Codex to improve grading pipeline efficiency and debugging.
+Brian Head Resort        October 2024 - March 2025
+Ski Lift Operator
+* Worked collaboratively in a fast-paced environment, developing communication and problem-solving skills under pressure. Ensured the safety of 2,000+ guests daily. 
+PROJECTS
+________________
+
+
+Math Concept Graph | React, D3, LaTeX, Vite, Git        April 2026
+* Built a responsive interactive dependency graph of 300+ mathematical concepts using React, D3, Vite, and Git, with force-directed layouts, zoom/pan, draggable nodes, and dependency-aware highlighting.
+* Engineered a maintainable and extensible concept architecture with automatically computed dependency tiers, live search, LaTeX rendering, and lazy-loaded rich content modules.
+Minimax Tic-Tac-Toe Program | Java, JUnit        February 2026
+* Unbeatable closed search algorithm for a zero-sum game, implemented using clean and modular OOP software architecture with sophisticated documentation in modern Java.
+Secure Password Generator | Python, Tkinter        April 2025
+* Designed and built a GUI-based Python desktop application using Tkinter to generate and export custom, secure passwords based on user-selected criteria.
+TECHNICAL SKILLS
+________________
+
+
+Languages:        Python, Java, C#, Bash, HTML/CSS
+Tools & Libraries:        Git, Linux, Vite, JUnit, React, Codex
